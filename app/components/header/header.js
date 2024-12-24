@@ -9,7 +9,7 @@ function Header() {
     return (
         <header>
             <div className="logo">
-                <Link href="/"><img src="./logo.png" alt="Logo" /></Link>
+                <Link href="/"><img src="./Logo.png" alt="Logo" /></Link>
             </div>
             <div className='links'>
             <Link href="/"><li className='li'>Home</li></Link>
