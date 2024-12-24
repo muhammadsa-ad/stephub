@@ -1,0 +1,70 @@
+/* app/products/ProductList.css */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space out the products */
+    margin: 0px 0;
+}
+.h2{
+    padding-top: 20px;
+    font-size: 1.7rem;
+}
+.product-item {
+    background-color: #f9f9f9; /* Light background for product items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside product items */
+    margin: 10px; /* Margin between product items */
+    width: 220px; /* Fixed width for product items */
+    text-align: center; /* Center text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    margin-bottom: 2%; 
+}
+
+.product-item:hover {
+    transform: scale(1.03); /* Scale up on hover */
+}
+
+.product-item img {
+    width: 200px; /* Fixed width for images */
+    height: 278px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image fits within the box while maintaining its aspect ratio */
+    border-radius: 4px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Spacing below the image */
+}
+
+.product-name {
+    color: black;
+    font-size: 1.1rem; /* Larger font size for product name */
+    font-weight: bold; /* Bold font for product name */
+    margin: 10px 0; /* Margin around product name */
+}
+
+.product-description {
+    font-size: 0.9rem; /* Smaller font size for description */
+    color: #555; /* Darker gray for description text */
+}
+
+.product-price {
+    font-size: 1rem; /* Font size for price */
+    color: #333; /* Darker color for price */
+    margin: 10px 0; /* Margin around price */
+    padding: 2%;
+    border-radius: 7px;
+}
+
+.product-button {
+    font-size: 1rem; /* Font size for price */
+    color: white; /* White text for button */
+    background-color: #ff8835; /* Button background color */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.product-button:hover {
+    background-color: #e67329; /* Darker button color on hover */
+}

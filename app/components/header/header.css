@@ -1,0 +1,70 @@
+/* Fixed Header Styles */
+header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  padding: 0 20px; /* Adjust padding for consistent spacing */
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 97%; /* Ensure it spans the full width */
+  z-index: 1000;
+ /* Prevent content overlap */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Logo Styles */
+header .logo img {
+  height: 70px; /* Adjust as needed for consistency */
+  max-height: 100%;
+}
+
+/* Navigation Links */
+header .links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between links */
+  list-style: none;
+}
+
+header .li {
+  color: #ffffff;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header .li:hover {
+  color: rgb(255, 124, 30);
+  background-color: rgba(255, 124, 30, 0.1);
+}
+
+/* Cart Notification Badge */
+header .span {
+  display: inline-block;
+  background-color: #ff8835;
+  color: black;
+  font-size: 0.8rem;
+  width: 18px; /* Adjust size for readability */
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px; /* Center text vertically */
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+/* Cart Link Positioning */
+header .links li:last-child {
+  position: relative; /* Ensure badge is correctly positioned */
+}
+
+/* Prevent Content Overlap */
+body {
+  padding-top: 10vh; /* Add padding equal to header height */
+}

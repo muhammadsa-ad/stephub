@@ -1,0 +1,81 @@
+/* signup.css */
+.signup-container{
+    padding-top: 20px;
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    color: #fffdfd;
+    gap: 16px; /* Space between inputs */
+    max-width: 400px; /* Maximum width of the form */
+    margin: auto; /* Center the form horizontally */
+    background: #323131;
+}
+
+.signup-form h2 {
+    text-align: center; /* Center the heading */
+    margin-top: 3%; /* Adjust margin to match login */
+    font-size: x-large; /* Match font size with login */
+    font-weight: bold; /* Match font weight with login */
+}
+
+.signup-form input {
+    padding: 2%;
+    border: 1px solid #f7781e;
+    border-radius: 4px;
+    background-color: #d1e0ee;
+    color: black;
+}
+
+.signup-form .signupbutton {
+    padding: 1.5%; /* Match padding with login */
+    background-color: #ff8835; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: medium; /* Match font size with login */
+    margin-bottom: 5%; /* Match margin with login */
+}
+
+.signup-form button:hover {
+    background-color: #f7781e; /* Darker color on hover */
+}
+
+.error-message {
+    color: red; /* Color for error messages */
+    font-size: 14px; /* Font size for error messages */
+}
+.toggle-password {
+    margin-left: 10px; /* Space between input and button */
+    background-color:#ff8835 ; /* Remove default button styling */
+    border: none; /* Remove border */
+    color: rgb(255, 255, 255); /* Primary color for the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: small; /* Match font size with input */
+    border-radius: 4px;
+    padding: 2%; /* Remove padding for a cleaner look */
+}
+
+.toggle-password:hover {
+    background-color: #f7781e; /* Darker color on hover */
+}
+.tcs {
+    display: flex; /* Flexbox for terms and conditions */
+    flex-direction: row; /* Row direction */
+    justify-content: flex-start; /* Align items to the start */
+    text-align: center; /* Center text */
+}
+
+.tcs input {
+    margin-right: 2%; /* Space between checkbox and text */
+    width: 4%; /* Width of the checkbox */
+}
+
+.tcs input[type='checkbox'] {
+    accent-color: #ff8835; /* Change this to your desired color */
+}
+
+.tcs p {
+    font-size: 88%; /* Font size for terms and conditions text */
+}
